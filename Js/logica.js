@@ -78,7 +78,7 @@ var cesar = cesar || (function(){
 
 		})();
 
-		var re = (/[a-z]/ig);
+		var re = (/[a-z\u00f1]/ig);
 		return String(txt).replace(re, function(match){
 			return replace(match);
 		});
@@ -118,7 +118,7 @@ function codificar(){
 	
 	
 
-	document.getElementById("CadenaRess").innerHTML = incrementof%27; 
+
 
 }
 
@@ -147,7 +147,4 @@ function decodificar(){
 		location.reload();
 	}
 	
-
-	document.getElementById("CadenaRess").innerHTML = decrementof%27;	
 }
-
